@@ -30,5 +30,5 @@
   "devDependencies": {
     "gh-pages": "^2.0.1"
   },
-  "homepage": "http://nkaki.github.io/mysimple-sudoku"
+  "homepage": "http://nkaki.github.io/simple-sudoku"
 }
