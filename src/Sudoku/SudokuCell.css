@@ -1,0 +1,50 @@
+.sudoku-board button.value {
+    height: 54px;
+    width: 54px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    cursor: pointer;
+    background: transparent;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sudoku-board button.candidate {
+    height: 18px;
+    width: 18px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+    background: transparent;
+}
+
+.sudoku-board button.candidate:hover {
+    background: grey;
+}
+
+.sudoku-board button.placeholder {
+    height: 18px;
+    width: 18px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    float: left;
+    background: transparent;
+}
+
+div.wrapper {
+    height: 54px;
+    width: 54px;
+    position: relative;
+}
+
+.sudoku-board button.removed {
+    background: lightgray
+}
