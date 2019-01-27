@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/simple-sudoku/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "e514a18644bdac7aa5ad",
-    "url": "/simple-sudoku/static/css/main.fbd24331.chunk.css"
+    "revision": "6c79965557f5f124c611",
+    "url": "/simple-sudoku/static/css/main.0db656bf.chunk.css"
   },
   {
     "revision": "a1a749e89f578a49306ec2b055c073da",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/simple-sudoku/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "701ae6abd4719e9c2ada3535a497b341",
-    "url": "/simple-sudoku/static/media/outline-icons.701ae6ab.eot"
-  },
-  {
     "revision": "ad97afd3337e8cda302d10ff5a4026b8",
     "url": "/simple-sudoku/static/media/outline-icons.ad97afd3.ttf"
+  },
+  {
+    "revision": "701ae6abd4719e9c2ada3535a497b341",
+    "url": "/simple-sudoku/static/media/outline-icons.701ae6ab.eot"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/simple-sudoku/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "e514a18644bdac7aa5ad",
-    "url": "/simple-sudoku/static/js/main.e514a186.chunk.js"
+    "revision": "6c79965557f5f124c611",
+    "url": "/simple-sudoku/static/js/main.6c799655.chunk.js"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/simple-sudoku/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "13db00b7a34fee4d819ab7f9838cc428",
-    "url": "/simple-sudoku/static/media/brand-icons.13db00b7.eot"
-  },
-  {
     "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
     "url": "/simple-sudoku/static/media/icons.b87b9ba5.ttf"
+  },
+  {
+    "revision": "13db00b7a34fee4d819ab7f9838cc428",
+    "url": "/simple-sudoku/static/media/brand-icons.13db00b7.eot"
   },
   {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/simple-sudoku/static/css/1.30af3288.chunk.css"
   },
   {
-    "revision": "53102d49659af6af9a1b20df9b101c22",
+    "revision": "a83a1f7b1aacd4492ac009ce0654768f",
     "url": "/simple-sudoku/index.html"
   }
 ];
