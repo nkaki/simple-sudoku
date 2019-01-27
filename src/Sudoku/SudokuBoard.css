@@ -40,10 +40,14 @@
     background: lightgray;
 }
 
-.button-bar{
+.button-bar {
     text-align: center;
 }
 
-.solved-bar{
+.solved-bar {
     text-align: center;
+}
+
+.selected {
+    background: lightgray;
 }

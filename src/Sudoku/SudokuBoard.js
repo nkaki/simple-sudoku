@@ -60,7 +60,11 @@ class SudokuBoard extends Component {
             ],
             puzzleMultiple: [
                 [[0,0,0,6,0,0,5,0,0],[0,3,0,0,0,4,0,2,0],[0,0,9,0,2,3,0,0,8],[7,0,0,0,0,0,0,0,0],[0,0,1,8,0,6,3,0,0],[0,0,0,0,0,0,0,0,7],[5,0,6,3,9,0,1,0,0],[0,7,0,4,0,0,0,5,0],[0,0,4,0,0,5,0,0,0]],
-            ]
+            ],
+            puzzleInfo: {
+                index: 0,
+                level: 'Easy'
+            }
         };
         const puzzle = this.state.puzzleEasy[0];
         this.state.puzzle = copySudoku(puzzle);
@@ -120,10 +124,11 @@ class SudokuBoard extends Component {
         console.log(this.state.puzzle);
     }
 
-    changePuzzle(puzzle){
+    changePuzzle(level, index, puzzle){
         this.setState({
             puzzle: copySudoku(puzzle),
             puzzleReset: copySudoku(puzzle),
+            puzzleInfo: {index: index, level: level},
             removedCandidates: getEmptyRemovedcandidates()
         });
     }
@@ -152,32 +157,15 @@ class SudokuBoard extends Component {
         ].map((puzzleInfo) =>(
             <Table.Row>
                 <Table.Cell>{puzzleInfo[0]}</Table.Cell>
-                {puzzleInfo[1].map((puzzle, index) => (
-                    <Table.Cell key={puzzleInfo[0] + index} onClick={()=>this.changePuzzle(puzzle)}>
-                        {index + 1}
-                    </Table.Cell>))}
+                {puzzleInfo[1].map((puzzle, index) => {
+                    if(this.state.puzzleInfo.index === index && this.state.puzzleInfo.level === puzzleInfo[0]){
+                        return (<Table.Cell className='selected' key={puzzleInfo[0] + index} onClick={()=>this.changePuzzle(puzzleInfo[0], index, puzzle)}>{index + 1}</Table.Cell>)
+                    } else {
+                        return (<Table.Cell key={puzzleInfo[0] + index} onClick={()=>this.changePuzzle(puzzleInfo[0], index, puzzle)}>{index + 1}</Table.Cell>)
+                    }
+                })}
             </Table.Row>
         ));
-
-    //     <Table.Body>
-    //     <Table.Row>
-    //       <Table.Cell>
-    //         <Label ribbon>First</Label>
-    //       </Table.Cell>
-    //       <Table.Cell>Cell</Table.Cell>
-    //       <Table.Cell>Cell</Table.Cell>
-    //     </Table.Row>
-    //     <Table.Row>
-    //       <Table.Cell>Cell</Table.Cell>
-    //       <Table.Cell>Cell</Table.Cell>
-    //       <Table.Cell>Cell</Table.Cell>
-    //     </Table.Row>
-    //     <Table.Row>
-    //       <Table.Cell>Cell</Table.Cell>
-    //       <Table.Cell>Cell</Table.Cell>
-    //       <Table.Cell>Cell</Table.Cell>
-    //     </Table.Row>
-    //   </Table.Body>
 
         let table = (<Table celled><Table.Body>{puzzles}</Table.Body></Table>);
         // console.log(easy);
